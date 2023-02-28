@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+  <html lang="es">
+
+  <link rel="stylesheet" href="navegacion/Perfecto desorden css.css">
+  <link href="http://fonts.cdnfonts.com/css/f-finish" rel="stylesheet">
+                
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/f-finish');
+
+    #center {
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: fixed;
+      transition: top 0.3s;
+    }
+      
+     /*navbar inicio*/
+  #navbar {
+    width: 100%;
+    top: 40%;
+    left: 13.2%;
+    position: fixed;
+    transition: top 0.3s;
+  }
+  /* Navigation links */
+  #navbar a  {
+    float: left;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Copperplate", fantasy;
+    width: 10%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  /* Add a background color on mouse-over */
+  #navbar a:hover{
+    background-color: rgb(85, 162, 192);
+    color: black;
+  }
+  /* Style the current/active link */
+  #navbar a.active {
+    color: rgb(85, 162, 192);
+  }
+  #navbar a.active:hover {
+    background-color: rgb(85, 162, 192);
+    color: rgb(255, 255, 255);
+  }
+  /* The dropdown container */
+  
+  
+  #navbar .dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    
+    font-family: "Copperplate", fantasy;
+    width: 10%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+
+  #navbar .dropdown:hover {
+    background-color: rgb(85, 162, 192);
+    color: black;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+  
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown:hover .dropbtn {
+    color: rgb(0, 0, 0);
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  #navbar .dropdown-content a {
+    float: none;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  #navbar .dropdown-content a:hover {
+    background-color: transparent;
+    box-shadow: 0px 20px 16px 20px rgba(0,0,0,0.2);
+    color: rgb(85, 162, 192);
+  }
+  
+  #navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  
+  /*navbar scroll*/
+  #navbar1 {
+    background-color: rgb(0, 0, 0); /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 30;
+    overflow: auto;
+  }
+  
+  #navbar1 a {
+    float: left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'f Finish', sans-serif;
+    width: 12.5%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  #navbar1 a:hover{
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar1 a.active {
+    color: rgb(85, 162, 192);
+  }
+  #navbar1 a.active:hover {
+    background-color: rgb(85, 162, 192);
+    color: rgb(255, 255, 255);
+  }
+  
+  #navbar1 .dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    
+    font-family: "Copperplate", fantasy;
+    width: 13.234%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+
+  #navbar1 .dropdown:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar1 .dropdown-content {
+    float: center;
+    display: none;
+    position: absolute;
+    min-width: 230px;
+    padding: 4px;
+    padding-top: 20px;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  #navbar1 .dropdown-content a {
+    float: none;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    padding-left: 30%;
+    padding-right: 30%;
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  #navbar1 .dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  #navbar1 .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+    .tablita{
+      width:1000px;
+    }
+      
+
+    #anim{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+
+
+    /* The container <div> - needed to position the dropdown content */
+    .caida{
+      display: none;
+      position: fixed;
+      top:0px;
+      width: 100%;
+      z-index: 30;
+      
+      
+    }
+
+    .imagenuno{
+      width: 200px;
+    }
+
+    .textouno{
+      text-align:justify; font-family: arial; font-size:20px; color: #ffffff; padding: 10% 
+    }
+
+    .textodos{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:60px;color:white;
+    }
+    .textotres{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:30px;color:white;
+    }
+
+    .titulos{
+      font-size:40px;
+    }
+
+    .noticias2{
+      font-size:30px;
+      
+    }
+
+    .numerolugar{
+      font-size:25px;
+      
+    }
+
+    .textoconci{
+      font-size:20px;
+    }
+
+    .boton2 {
+      width: 200px;
+      height: 50px;
+      background-color: #fce6be;
+      font-family: Georgia, serif;
+      border: solid #fff3dc;
+      color: rgb(0, 0, 0);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .boton2:hover {
+      background-color: #000000;
+      border: solid #fff3dc;
+      color: rgb(255, 255, 255);
+      font-family: Georgia, serif;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .titulopagina{
+      width:350px;
+    }
+
+    .frasepagina{
+
+      font-size:30px;
+
+    }
+
+    .spoty{
+      width:300px;
+      height:200px;
+    }
+
+
+   
+    @media screen and (max-width: 1100px) {
+
+      .boton2 {
+        width: 150px;
+        height: 40px;
+        background-color: #fce6be;
+        font-family: Georgia, serif;
+        border: solid #fff3dc;
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .boton2:hover {
+        background-color: #000000;
+        border: solid #fff3dc;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, serif;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .imagenuno{
+        width: 100px;
+      }
+  
+      .textouno{
+        text-align:justify; font-family: arial; font-size:13px; color: #ffffff; padding: 10% 
+      }
+
+      .textodos{
+        text-align:center; font-family: 'f Finish', sans-serif;font-size:40px;color:white;
+      }
+      .textotres{
+        text-align:center; font-family: 'f Finish', sans-serif;font-size:20px;color:white;
+      }
+      .noticias2{
+        font-size:25px;
+        
+      }
+
+    .numerolugar{
+      font-size:20px;
+      
+    }
+
+    .textoconci{
+      font-size:15px;
+    }
+  }
+  
+    
+
+    @media screen and (max-width: 700px) {
+
+      .titulopagina{
+        width:200px;
+      }
+  
+      .frasepagina{
+  
+        font-size:20px;
+  
+      }
+  
+      .spoty{
+        width: 100%;
+      }
+
+
+
+      .numerolugar{
+        font-size:15px;
+        
+      }
+  
+      .textoconci{
+        font-size:10px;
+      }
+
+      .imagenuno{
+        width: 50px;
+      }
+
+      .textouno{
+        text-align:justify; font-family: arial; font-size:8px; color: #ffffff; padding: 10% 
+      }
+
+      .textodos{
+        text-align:center; font-family: 'f Finish', sans-serif;font-size:30px;color:white;
+      }
+      .textotres{
+        text-align:center; font-family: 'f Finish', sans-serif;font-size:15px;color:white;
+      }
+      .noticias2{
+        font-size:20px;
+        
+      }
+
+
+  
+      
+      #center {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: fixed;
+        transition: top 0.3s;
+      }
+      .tablita{
+        width:750px;
+      }
+      #navbar1 {
+        display: none;
+    
+      }
+
+      #navbar {
+        display:none;
+      }
+
+      /* Style The Dropdown Button */
+      .caidabtn {
+      
+        background-color: #000000;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 10%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       }
+
+      .caida{
+        display:block;
+        position: fixed;
+        top:0px;
+        width: 100%;   
+        
+      }
+  
+      /* Dropdown Content (Hidden by Default) */
+      .caida-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      /* Links inside the dropdown */
+      .caida-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+  
+      .caida-content a.activo {
+        color: rgb(83, 90, 187);
+        text-decoration: underline black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+  
+      /* Change color of dropdown links on hover */
+      .caida-content a:hover {background-color: #929292}
+      .caida-content a.nada:hover {background-color: #ffffff}
+  
+      /* Show the dropdown menu on hover */
+      .caida:hover .caida-content {
+        display: block;
+      }
+  
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .caida:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+  
+      
+    }
+
+    @media screen and (max-width: 450px) {
+
+      .boton2 {
+        width: 100px;
+        height: 30px;
+        background-color: #fce6be;
+        font-family: Georgia, serif;
+        border: solid #fff3dc;
+        color: rgb(0, 0, 0);
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .boton2:hover {
+        background-color: #000000;
+        border: solid #fff3dc;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, serif;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .titulos{
+        font-size:20px;
+      }
+      .imagenuno{
+        width: 35px;
+      }
+
+      .textouno{
+        text-align:justify; font-family: arial; font-size:5px; color: #ffffff; padding: 10% 
+      }
+
+      .textodos{
+        text-align:center; font-family: 'f Finish', sans-serif;font-size:15px;color:white;
+      }
+      .textotres{
+        text-align:center; font-family: 'f Finish', sans-serif;font-size:9px;color:white;
+      }
+
+    
+    .numerolugar{
+      font-size:10px;
+      
+    }
+
+    .textoconci{
+      font-size:5px;
+    }
+    .noticias2{
+      font-size:10px;
+      
+    }
+  }
+
+
+    
+  </style>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable:no">
+
+    <title>Perfecto Desorden | Indice</title>
+    <link rel="icon" href="navegacion/imagenes/logo perfecto.png">
+  </head>
+
+
+  <body>
+    <header>
+      <div class="header">
+        
+        <div style="text-align:center; padding-top:280px; padding-bottom:20px" >
+          <img class="titulopagina" src="navegacion/imagenes/logo blanco perfecto.png" >
+        </div>
+        <!-- font-family: serif; font-style: italic; -->
+        <div style="text-align:center;" > 
+          <p class="frasepagina"  style="text-align:center;
+          font-family: 'f Finish', sans-serif;
+          color: white;">- ¡VOY A SER AIRE Y VOLAR! -</p>
+        </div>
+        <div class="space">
+        </div>
+        <div style="text-align:center;" >
+          <iframe class="spoti" style="border-radius:12px; padding-bottom:250px" 
+          src="https://open.spotify.com/embed/track/44reJxPLeS4QDnNpBCTD2q?utm_source=generator&theme=0" 
+          frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
+          picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+
+      <div class="caida">
+        <button class="caidabtn"><img src="navegacion/imagenes/nav.png" width=7%></button>
+        <div class="caida-content">
+          <a class="activo" href="index.html"><b>INICIO</b></a>
+          <a href="navegacion/Banda PD.html"><b>PERFECTO DESORDEN</b></a>
+          <a href="#noticias"><b>NOTICIAS</b></a>
+          <a href="navegacion/Fotos PD.html"><b>FOTOS</b></a>
+
+          <a href="navegacion/Videos PD.html"><b>VIDEOCLIPS</b></a>
+
+          <a href="#concis"><b>CONCIERTOS</b></a>
+          <a href="#EP"><b>DISCOGRAFÍA</b></a>
+          <a href="navegacion/Contacto PD.html"><b>CONTACTO</b></a>
+        </div>
+      </div>
+
+      <div id="navbar1">
+        <a class="active" href="index.html">INICIO</a>
+        <a href="navegacion/Banda PD.html">PERFECTO DESORDEN</a>
+        <a href="#noticias" style="scroll-behavior: smooth;">NOTICIAS</a>
+        <a href="navegacion/Fotos PD.html">FOTOS</a>
+        <a href="navegacion/Videos PD.html">VIDEOCLIPS</a>
+        <a href="#concis">CONCIERTOS</a>
+        <a href="#EP">DISCOGRAFÍA</a>
+        <a href="navegacion/Contacto PD.html">CONTACTO</a>
+      </div>
+    </header>
+    <section style="background-color: #000000;">
+      <table width=100% style="padding:0px; margin: 0;  font-size: 0;background-color: #000000;">
+        <tr style=" height: 50px; padding-bottom:100px;">
+          <th style="text-align: left;width:50%">
+            <img  width="100%" src="navegacion/imagenes/vertical1.jpg" />
+          </th>
+          <th style="width:50%; text-align:center">
+            <img class ="imagenuno" styl="padding: 10%"src="navegacion/imagenes/perfectodesorden logo blanco.png" >
+                <!--<p style="text-align:justify; font-family: arial; font-size:20px; color: #ffffff; padding: 10% "> <b>Perfecto Desorden</b>, ganadores del concurso de "l'Hospitalet té talent" y del festival "Zafarraya Sound" celebrado en Granada,
+                   es un grupo originado en Hospitalet de Llobregat inspirado por muchos grupos y estilos músicales, pero más especificamente el <b>Rock, Rock n' Roll y el Pop Rock</b>. Con grandes influencias del rock español con grupos
+                   como 'Extremoduro', 'Marea' o 'Platero y Tú'; e internacionales como 'Red Hot Chili Peppers' o 'Greenday', entre otros. </p>-->
+                  <p class="textouno">
+                    Perfecto Desorden es una banda de rock-pop de L’Hospitalet de Llobregat. Inspirados por grupos como Extremoduro, Greenday, Fito y Fitipaldis o SkaP tienen como objetivo hacer saltar y gritar a toda una generación.
+                    <br>
+                    <br>
+                    Sus letras tienen un gran componente social, defendiendo la igualdad de derechos y libertades, el autoconocimiento y la esperanza. Un grito alegre y combativo que se une a una combinación instrumental de guitarra, bajo, piano, batería y saxo. Todo ello trabajado con el cariño, el respeto y la fuerza de un equipo de músicos con una gran formación musical que, acompañada de cervezas, hace de cada concierto un espectáculo único y especial.
+                    <br>
+                    <br>
+                    Su primer EP de cinco canciones, ‘AIRE’, les ha permitido tocar por muchos puntos de Catalunya: FM Les Corts, Granollers, ETSEIB UB, La Báscula, Kfé Olé… Ganar concursos locales como ‘L’Hospitalet té Talent’, y ser seleccionados de entre más de doscientos artistas para viajar a Granada y logar un segundo puesto en la final del ‘Zafarraya Sound’.                    <br>
+                    <br>
+                    <br>
+                    Actualmente, están trabajando en su segundo proyecto musical con Cases de la Música, un EP de seis canciones que saldrá a la luz a principios de 2023.
+                  </p>
+                   <!--<p style="text-align:center; font-family: Georgia, serif;"> "A veces, el mundo puede parecer un lugar caótico y organizado a la vez<br>
+                    Te permite tenerlo todo, mientras no te deja ver nada<br>
+                    Solo hay que encontrar ese punto de luz, esa piedra en la arena<br>
+                    Que te permita disfrutar del <b>PERFECTO DESORDEN</b> que es la vida" </p>-->
+          </th>
+        </tr>
+      </table>
+          <!-- <div class="row" style="  margin: 0 auto;">
+            <div class="column1">
+              <div style="height: 1000px;"></div>
+              
+            </div>
+            <div class="column" style="text-align:center;  padding:100px; height: 1000px;">
+                <img src="navegacion/imagenes/perfectodesorden logo blanco.png" width=200>
+                <p style="text-align:justify; font-family: arial; font-size:20px; color: #ffffff; "> <b>Perfecto Desorden</b>, ganadores del concurso de "l'Hospitalet té talent" y del festival "Zafarraya Sound" celebrado en Granada,
+                   es un grupo originado en Hospitalet de Llobregat inspirado por muchos grupos y estilos, más especificamente el <b>Rock, Rock n' Roll y el Pop Rock</b>. Con grandes influencias del rock español con grupos
+                   como 'Extremoduro', 'Marea' o 'Platero y Tú'; e internacionales como 'Red Hot Chili Peppers' o 'Greenday' ... </p>
+                   <p style="text-align:center; font-family: Georgia, serif;"> "A veces, el mundo puede parecer un lugar caótico y organizado a la vez<br>
+                    Te permite tenerlo todo, mientras no te deja ver nada<br>
+                    Solo hay que encontrar ese punto de luz, esa piedra en la arena<br>
+                    Que te permita disfrutar del <b>PERFECTO DESORDEN</b> que es la vida" </p>
+        
+            </div>
+          </div>-->
+  </section>
+
+  <section style="
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  display: block;
+  
+  padding:0px; margin: 0;  font-size: 0;">
+ 
+  <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+      <img src="navegacion/imagenes/portada2soñ.png" style="cursor:pointer; width:100%" />
+   </div>
+   <div style="display:none">
+    <iframe width="100%" height="800" src="https://www.youtube.com/embed/5yrgyhhh6yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </section>
+
+
+  <section id="EP" style="background-image: url(navegacion/imagenes/nubes.png);">
+    <div class="space">
+    </div>
+    <div class="space">
+    </div>
+
+    <table style=" width: 80%; margin: 0 auto; table-layout: fixed;" >
+      <tr style="vertical-align: center;">
+        <th>
+          <img position="absolute" src="navegacion/imagenes/airee.png" width=70%>
+        </th>
+        <th>
+          <img style="vertical-align: center;" src="navegacion/imagenes/spotiaire.png" width=150>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/44reJxPLeS4QDnNpBCTD2q?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/00XOPoeTFfSYbBP2rWofuJ?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1kyW8lG22SSU1JkTXqWRYY?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4TaIMYDui0mCcurnijCqZO?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0mkqxjdbSzm6A6kRdSDVkC?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </th>
+      </tr>
+    </table>
+    <div class="space">
+    </div>
+    <div class="space">
+    </div>
+  </section>
+  
+  <section style="
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  display: block;
+  
+  padding:0px; margin: 0;  font-size: 0;">
+ 
+  <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+      <img src="navegacion/imagenes/para ya de hablar2.png" style="cursor:pointer; width:100%" />
+   </div>
+   <div style="display:none">
+    <iframe width="100%" height="800" src="https://www.youtube.com/embed/zzvIRPwTzEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </section>
+
+    <section>
+      <div style="text-align:center;">
+        <p id="concis"class="titulos" style="text-align:center; font-family: 'f Finish', sans-serif; color:#000000;  padding-top:50px;">CONCIERTOS POR VENIR</p>
+
+          <table style="margin: 0 auto; padding-top:20px; width:80%; text-align:center">
+              
+              <tr style="vertical-align: center; width:5%; padding-bottom:100px;">
+                <th style="background: rgb(0, 0, 0) ">
+                  
+                  <p class="numerolugar" style="text-align:center; font-family: Arial, sans-serif;color:#ffffff">4</p>
+                </th>
+                <th style="width:28.3%">
+                  <p class="textoconci" style="text-align:center; font-family: Arial, sans-serif; ">Marzo</p>
+                  <p class="textoconci" style="text-align:center; font-family: Arial, sans-serif;">2023</p>
+                </th>
+                <th style="width:38.3%">
+                  <p class="numerolugar" style="text-align:left; font-family: Arial, sans-serif;">Barcelona</p>
+                  <a href=""><p class="textoconci" style="text-align:left; font-family: Arial, sans-serif;">&#128205;	Próximamente</p></a>
+      
+                </th>
+                <th style="width:28.3%">
+                 <p  class="textoconci" style="text-align:center; font-family: Arial, sans-serif;">&#127915; ENTRADA LIBRE</p>
+                </th>
+              </tr>
+      
+              <tr style="vertical-align: center; width:5%;">
+                <th style="background: rgb(0, 0, 0) ">
+                  <p class="numerolugar" style="text-align:center; font-family: Arial, sans-serif;color:#ffffff">15</p>
+                </th>
+                <th style="width:28.3%">
+                  <p class="textoconci" style="text-align:center; font-family: Arial, sans-serif;">Abril</p>
+                  <p class="textoconci" style="text-align:center; font-family: Arial, sans-serif;">2023</p>
+                </th>
+                <th style="width:38.3%">
+                  <p class="numerolugar" style="text-align:left; font-family: Arial, sans-serif;">Cornellà</p>
+                  <a href="https://www.google.es/maps/place/Auditorio+de+Cornell%C3%A0/@41.3494084,2.0769434,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4994f2512c2fd:0xf80d4289daa7870b!8m2!3d41.3494049!4d2.0814298?hl=es&authuser=0"><p class="textoconci" style="text-align:left; font-family: Arial, sans-serif;">&#128205;	Auditori de Cornellá</p></a>
+      
+                </th>
+                <th style="width:28.3%">
+                  <a href="https://www.auditoricornella.com/ca/programacio/c/4393-perfecto-desorden.html"><p class="textoconci" style="text-align:center; font-family: Arial, sans-serif;">&#127915; COMPRAR ENTRADA</p></a>
+                </th>
+              </tr>
+            </table>
+          </div>
+      </div>  
+
+      <div class="space"></div>
+    </section>
+
+    <section style="background-color:black">
+      <p  class="titulos" style="text-align:center; font-family: 'f Finish', sans-serif; color:#ffffff;  padding-top:50px;padding-bottom:50px;">NUESTROS CONCIERTOS</p>
+      <div style="
+      top: 0px; /* Hide the navbar 50 px outside of the top view */
+      width: 100%;
+      display: block;
+      
+      padding:0px; margin: 0;  font-size: 0;">
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/La bascula.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/upc.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/santmedir.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/aelh.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/can sumarro.mp4" type="video/mp4"></source>
+      </video>
+      </div>
+      <div style="
+      top: 0px; /* Hide the navbar 50 px outside of the top view */
+      width: 100%;
+      display: block;
+      
+      padding:0px; margin: 0;  font-size: 0;">
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/pinyas.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/stripart.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/zafarraya.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/granollers.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/kfeole.mp4" type="video/mp4"></source>
+      </video>
+      </div>
+
+      <div style="
+      top: 0px; /* Hide the navbar 50 px outside of the top view */
+      width: 100%;
+      display: block;
+      
+      padding:0px; margin: 0;  font-size: 0;">
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/fondo negrovids.png" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/lescorts.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/fondo negrovids.png" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/videos/UB fest.mp4" type="video/mp4"></source>
+      </video>
+      <video style="padding:0px; margin: 0;" width=20% onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="navegacion/imagenes/fondo negrovids.png" type="video/mp4"></source>
+      </video>
+      </div>
+    </section>
+
+    <section id="noticias" style="margin: 0 ;padding-top:10px; padding:0px; background-color:rgb(0, 0, 0)">
+      <p class="titulos" style="text-align:center; font-family: 'f Finish', sans-serif; color:#ffffff;  padding-top:50px;padding-bottom:50px;">NOTICIAS</p>
+      <div style="background-color: rgb(0, 0, 0)">
+        <div style="text-align:center; padding-top: 10px" >
+          <a href=https://lhdigital.cat/web/digital-h/noticia/cultura/-/journal_content/56_INSTANCE_43Th/11023/15091654><img class="imagen" src="navegacion/imagenes/PinyasSummerFest (124 de 148).jpg" width=40%></a>
+        </div>
+        <a href=https://lhdigital.cat/web/digital-h/noticia/cultura/-/journal_content/56_INSTANCE_43Th/11023/15091654><p class="textoconci" style="color:#ffffff;text-align:center; font-family: arial;"><b>Perfecto Desorden</b></p>
+        <p class="noticias2" style="padding-bottom:50px;color:#ffffff;text-align:center; font-family: arial;"><b>Gana el "L'H té talent"</b></p></a>
+      </div>
+    </section>
+    <section style="margin: 0 ;padding-top:30x; padding:0px; background-color:rgb(255, 255, 255)">
+      <p class="titulos" style="text-align:center; font-family: 'f Finish', sans-serif; color:#000000;  padding-top:50px;padding-bottom:10px;">CONCURSOS</p>
+      <table style=" margin: 0 auto;padding-bottom:40px;">
+        
+        <tr style="vertical-align: center; ">
+          <th>
+            <img  width=100% src="navegacion/imagenes/l'H1.gif" >
+          </th>
+          <th>
+            <img  width=100% src="navegacion/imagenes/zafa1.gif">
+          </th>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+    <section  style="margin: 0 ;padding-top:10px; padding:0px; background-color:rgb(0, 0, 0)">
+      <div style="text-align:center;">
+        <p class="titulos" style="text-align:center; font-family: 'f Finish', sans-serif; color:#ffffff;  padding-top:50px;padding-bottom:50px;">ENTREVISTAS</p>
+
+        <table cellspacing="0" cellpadding="0" width=100% style="margin: 0 ;padding-top:10px; padding:0px;">
+          <tr style="vertical-align: center;  padding: 30px;">
+            <th style="background-image: url(navegacion/imagenes/fetamida2.png);background-position: center; padding:30px">
+              
+              <a href=https://www.alacarta.cat/fetamida/capitol/fet_a_mida_26042022>
+                <!--<img class="imagen" src="navegacion/imagenes/fet a mida.jpg" style=" width:300px" />-->
+              <p class="noticias2" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>Fet a mida - Perfecto Desorden</b></p>
+                <p class="textoconci" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>Capítol 210</b></p></a>
+            </th>
+            <th style="background-image: url(navegacion/imagenes/fetamida2.png);background-position: center; padding:30px">
+              <a href=https://open.spotify.com/episode/6K5k28X3MpCgSjJPHIP8kk>
+              <!--<img class="imagen" src="navegacion/imagenes/generació per.png" style=" width:300px" />-->
+              <p class="noticias2" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>Generació Perduda - Perfecto Desorden</b></p>
+                <p class="textoconci" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>02/04/2022</b></p></a>
+            </th>
+          </tr>
+  
+          <tr style="vertical-align: center;">
+            <th style="background-image: url(navegacion/imagenes/taquilla\ inversa2.png);background-position: center; padding:30px">
+              <a href=https://lhdigital.cat/web/digital-h/televisio/veure-video/-/journal_content/56_INSTANCE_ZrP3/11023/15085744>
+              <!--<img class="imagen" src="navegacion/imagenes/taqui inv.png" style="width:300px" />-->
+              <p class="noticias2" style="color:#ffffff;text-align:center;font-family: arial;text-shadow: 2px 2px #000000;"><b>Taquilla inversa - Perfecto Desorden</b></p>
+                <p class="textoconci" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>L'Hart recupera la normalitat</b></p></a>
+            </th>
+            <th style="background-image: url(navegacion/imagenes/lhtetalent.png);background-position: center; padding:30px">
+              <a href=https://lhdigital.cat/web/digital-h/veure-multimedia?xarxaId=62d511e65b536b2298c04e72&vimeoId=undefined&video=&titol=Perfecto%20Desorden%20guanya%20el%20L%27H%20t%C3%A9%20talent>
+              <!--<img class="imagen" src="navegacion/imagenes/hospi digital.jpg" style="width:300px" />-->
+              <p class="noticias2" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>Perfecto Desorden</b></p>
+                <p class="textoconci" style="color:#ffffff;text-align:center; font-family: arial;text-shadow: 2px 2px #000000;"><b>Gana el "L'H té talent"</b></p></a>
+            </th>
+          </tr>
+        </table>
+    </section>
+   
+
+    <section>
+      
+        <table width=100% style="padding:0px; margin: 0;  font-size: 0;background-color: #000000;">
+          <tr style=" height: 50px; padding-bottom:100px;">
+            <th style="text-align: left">
+              <img width="60%"  src="navegacion/imagenes/david michelangelo3.png" />
+            </th>
+            <th>
+              <p class="textodos"><b>PARTICIPA</b></p>
+              <a href="https://www.instagram.com/stories/highlights/17967480172667592/"><img  width=50% class="imagen"  src="navegacion/imagenes/random perfecto desorden blanco.png" /></a>
+              <p class="textotres">SUBE UNA FOTO CON TU CAMI A INSTA STORY<br> EN EL LUGAR MÁS LOCO QUE ENCUENTRES </p>
+            </th>
+          </tr>
+        </table>
+    </section>
+    <section style="background-color:rgb(250, 250, 250)">
+      <div style="text-align:center;" >
+        <img  src="navegacion/imagenes/videos/noti.gif" width=25% >
+      </div>
+    </section>
+
+
+    <footer style="background-color:#fff3dc">
+        
+   
+            <div style="text-align:center;" >
+              <img src="navegacion/imagenes/logo perfecto.png" width=15%>
+            </div>
+      
+      
+      <table style="width: 60%; margin: 0 auto;">
+        <tr style="vertical-align: center; height: 50px;">
+          <th>
+            <div style="text-align:center;" >
+              <a href=https://open.spotify.com/artist/4yqMB9jPazIBx0oraEmeEb><img src="navegacion/imagenes/spoty.png" width=15%></a>
+              <a href=https://www.instagram.com/perfectodesorden><img src="navegacion/imagenes/instaaa.png" width=15%></a>
+              <div style="height: 0px;"></div>
+              <a href=https://www.youtube.com/channel/UCp-eVn46Vgf0LNvRpmFxHPQ><img src="navegacion/imagenes/yutu.png" width=15%></a>
+              <a href=https://twitter.com/perfectodesordn><img src="navegacion/imagenes/twitte'.png" width=15%></a>
+            </div>
+          </th>
+          <th>
+            <div style="text-align:center;" >
+              <a href="tel:+34615115480"><button class="boton2"><b>TELÉFONO</b></button></a>
+              <div style="height: 0px;"></div>
+              <a href="mailto:perfectodesordenoficial@gmail.com"><button class="boton2"><b>MAIL</b></button></a>
+            </div>
+            
+            </th>
+          </tr>
+      </table>
+      <div class="space"></div>
+      <div style="text-align:center;" >
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4yqMB9jPazIBx0oraEmeEb?utm_source=generator&theme=0" width="80%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>            
+      </div>  
+      <p style="text-align:center; font-size:11px; padding:5px"><b>©perfectodesorden2022</b></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <section > 
+          <div class="space">
+          </div>
+            <p style="text-align:center; font-family: Georgia, serif;font-size:40px"><b>|PRÓXIMOS CONCIERTOS|</b></p>
+            <div class="space">
+            </div>
+            
+            <div style="text-align:center;">
+              <table class="tablita" style="margin: 0 auto; border: 2px #2b2b2b solid; border-radius: 10px; ">
+                <tr style="vertical-align: center; height: 50px;">
+                  <th>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:15px">Fecha</p>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:25px">26</p>
+                  </th>
+                  <th>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:20px">Agosto</p>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:20px">2022</p>
+                  </th>
+                  <th>
+                    <p style="text-align:left; font-family: Arial, sans-serif; font-size:25px">Granollers (Barcelona)</p>
+                    <a href="https://www.google.es/maps/place/Pla%C3%A7a+del+Peix,+08401+Granollers,+Barcelona/@41.6064425,2.2855313,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4c7c5d8715357:0x4903a833afd46b53!8m2!3d41.6064425!4d2.28772?hl=es"><p style="text-align:left; font-family: Arial, sans-serif; font-size:20px">&#128205;	Plaça del Peix</p></a>
+
+                  </th>
+                  <th>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:20px">&#127915; ENTRADA LIBRE</p>
+                  </th>
+                </tr>
+
+                <tr style="vertical-align: center; height: 50px;">
+                  <th>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:15px">Fecha</p>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:25px">?</p>
+                  </th>
+                  <th>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:20px">Septiembre</p>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:20px">2022</p>
+                  </th>
+                  <th>
+                    <p style="text-align:left; font-family: Arial, sans-serif; font-size:25px">Hospitalet de Llobregat (Barcelona)</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=41.36201%2C2.10776&fbclid=IwAR0rLPjGfkenjsnZ89hsj3PxPNeUlT5--pRA-ZiBN1BEmFJGPSkJ1nhC69Q"><p style="text-align:left; font-family: Arial, sans-serif; font-size:20px">&#128205;	Kfè Olé</p></a>
+
+                  </th>
+                  <th>
+                    <p style="text-align:center; font-family: Arial, sans-serif; font-size:20px">&#127915; ENTRADA LIBRE</p>
+                  </th>
+                </tr>
+              </table> 
+            </div>  
+            
+            <div class="space"></div>
+
+            <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>...MÁS POR VENIR...</b></p>
+        </section>
+        <div style="text-align:center;" >
+          <img src="navegacion/imagenes/separador.png" style="padding: 30px" width=70>
+        </div>
+       
+        <section>
+            <table class="tablita"style="margin: 0 auto; table-layout: fixed;" >
+              <tr style="vertical-align: center;">
+                <th>
+                  <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>ESCUCHA EL ÚLTIMO SINGLE</b></p>
+                  <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>"SOÑARÉ"</b></p>
+                  <a href="https://distrokid.com/hyperfollow/perfectodesorden/soar-feat-marina-vallejo"><button class="boton">Escuchar aquí</button></a>
+                </th>
+                <th>
+                  <a href="https://distrokid.com/hyperfollow/perfectodesorden/soar-feat-marina-vallejo"><img class="static" src="navegacion/imagenes/ReasonableInconsequentialAcaciarat-size_restricted.gif" width=300></a>
+                  <img position="absolute" src="navegacion/imagenes/soñaré.jpg" width=300>
+                </th>
+              </tr>
+            </table>
+
+            <div style="text-align:center;" >
+              <img src="navegacion/imagenes/separador.png" style="padding: 30px" width=70>
+            </div>
+
+            <p style="text-align:center; font-family: Georgia, serif;font-size:40px"><b>|ÚLTIMOS VIDEOCLIPS|</b></p>
+            <br>
+
+            <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>"SOÑARÉ"</b></p>
+            <p style="text-align:center; font-family: Georgia, serif;font-size:20px"><b>Disponible en todas las plataformas</b></p>
+            <br>
+
+            <div style="text-align:center;" >
+              <iframe width="960" height="540" src="https://www.youtube.com/embed/5yrgyhhh6yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div style="text-align:center;" >
+            <a href="https://distrokid.com/hyperfollow/perfectodesorden/soar-feat-marina-vallejo"><button class="boton">Escuchar aquí</button></a>
+            </div>
+
+            <div class="space"></div>
+            <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>"PARA YA DE HABLAR"</b></p>
+            <p style="text-align:center; font-family: Georgia, serif;font-size:20px"><b>Disponible en todas las plataformas</b></p>
+            <br>
+            <div style="text-align:center;" >
+              <iframe width="960" height="540" src="https://www.youtube.com/embed/zzvIRPwTzEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div style="text-align:center;" >
+              <a href="https://distrokid.com/hyperfollow/perfectodesorden/para-ya-de-hablar"><button class="boton">Escuchar aquí</button></a>
+            </div>
+          </section>
+
+          <div style="text-align:center;" >
+            <img src="navegacion/imagenes/separador.png" style="padding: 30px" width=70>
+          </div>
+          <p style="text-align:center; font-family: Georgia, serif;font-size:40px"><b>|¡PARTICIPA!|</b></p>
+          <br>
+          <div style="text-align:center;" >
+            <a href="https://www.instagram.com/stories/highlights/17967480172667592/"><img class="imagen" src="navegacion/imagenes/random perfecto desorden.png" width=500></a>
+          </div>
+          <a href="https://www.instagram.com/stories/highlights/17967480172667592/">
+          <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>¡Sube una foto con tu camisa de <br> Perfecto Desorden a insta y etiquetanos!</b></p></a>
+          <div style="text-align:center;" >
+            <img src="navegacion/imagenes/separador.png" style="padding: 30px" width=70>
+          </div>
+
+          <section>
+            <p style="text-align:center; font-family: Georgia, serif;font-size:40px"><b>|NOTICIAS|</b></p>
+            <br>
+            <div style="text-align:center;" >
+              <a href=https://lhdigital.cat/web/digital-h/noticia/cultura/-/journal_content/56_INSTANCE_43Th/11023/15091654><img class="imagen" src="navegacion/imagenes/PinyasSummerFest (124 de 148).jpg" width=500></a>
+            </div>
+            <a href=https://lhdigital.cat/web/digital-h/noticia/cultura/-/journal_content/56_INSTANCE_43Th/11023/15091654><p style="text-align:center; font-family: Georgia, serif;font-size:20px"><b>Perfecto Desorden</b></p>
+            <p style="text-align:center; font-family: Georgia, serif;font-size:30px"><b>Gana el "L'H té talent"</b></p></a>
+              
+            <div style="text-align:center;" >
+              <img position="absolute" src="navegacion/imagenes/notificación.gif" width=400 style="margin: 40px;">
+            </div>
+          </section>
+     </section> -->
+
+
+
+      
+    
+      
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            document.getElementById("navbar1").style.top = "0px";
+            document.getElementById("navbar").style.top = "-60px";
+            document.getElementById("center").style.top = "-200px";
+        
+        } else {
+          document.getElementById("navbar1").style.top = "0px";
+          document.getElementById("navbar").style.top = "40%";
+          document.getElementById("center").style.top = "5%";
+
+        }
+      }
+
+      function one() {
+        document.getElementById('yt').style.opacity ='1';
+        document.getElementById('yt').style.zIndex = '0';
+        document.getElementById('portada').style.opacity ='0';
+    }
+      function dos() {
+        document.getElementById('yt2').style.opacity ='1';
+        document.getElementById('portada2').style.opacity ='0';
+    }
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.idName=== "navbar") {
+          x.idName += " responsive";
+        } else {
+          x.idName = "navbar";
+        }
+      }
+
+      function scrollTo(position) {
+        $('body').animate({scrollTop: position}, 500);
+      }
+      </script>
+  </body>
+
+
+</html>

@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="fotos pd.css">
+<link href="http://fonts.cdnfonts.com/css/f-finish" rel="stylesheet">
+                
+<style>
+  @import url('http://fonts.cdnfonts.com/css/f-finish');
+
+/*PARA EL CAROUSEL DE FOTOS*/
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  
+}
+
+/* Hide the images by default */
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8{
+  display: none;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7 , .dot8, .dot9{
+  
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activa {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#center {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  transition: top 0.3s;
+}
+    
+     /*navbar inicio*/
+
+
+
+
+/*navbar scroll*/
+#navbar1 {
+  background-color: rgb(0, 0, 0); /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 30;
+  overflow: auto;
+}
+
+#navbar1 a {
+  float: left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'f Finish', sans-serif;
+  width: 12.5%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+#navbar1 a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar1 a.active {
+  color: rgb(85, 162, 192);
+}
+#navbar1 a.active:hover {
+  background-color: rgb(85, 162, 192);
+  color: rgb(255, 255, 255);
+}
+
+#navbar1 .dropdown {
+  float: left;
+  overflow: hidden;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  
+  font-family: "Copperplate", fantasy;
+  width: 13.234%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+#navbar1 .dropdown:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar1 .dropdown-content {
+  float: center;
+  display: none;
+  position: absolute;
+  min-width: 230px;
+  padding: 4px;
+  padding-top: 20px;
+  z-index: 1;
+  text-align: center;
+}
+
+#navbar1 .dropdown-content a {
+  float: none;
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  padding-left: 30%;
+  padding-right: 30%;
+  color: rgb(255, 255, 255);
+  
+  text-decoration: none;
+  text-align: center;
+}
+
+#navbar1 .dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#navbar1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+  .tablita{
+    width:500px;
+  }
+    
+
+  #anim{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+
+
+  /* The container <div> - needed to position the dropdown content */
+  .caida{
+    display: none;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 30;
+    
+    
+  }
+
+  .smartphone {
+    display: none
+  }
+  
+  .pc {
+    display: inline
+  }
+  .imagenuno{
+    width: 550px;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .textouno{
+    text-align:justify; font-family: arial; font-size:20px; color: #ffffff; padding: 10% 
+  }
+
+  .textodos{
+    text-align:center; font-family: 'f Finish', sans-serif;font-size:60px;color:white;
+  }
+  .textotres{
+    text-align:justify; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;color:white; padding-left:200px; padding-right:200px
+  }
+
+  .titulos{
+    font-size:40px;
+  }
+
+  .noticias2{
+    font-size:15px;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    
+  }
+
+  .noticias2:hover{
+    color:rgb(255, 185, 234);
+   
+    
+  }
+
+  .numerolugar{
+    font-size:25px;
+    
+  }
+
+  .textoconci{
+    font-size:20px;
+  }
+
+  .boton2 {
+    width: 200px;
+    height: 50px;
+    background-color: #fce6be;
+    font-family: Georgia, serif;
+    border: solid #fff3dc;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .boton2:hover {
+    background-color: #000000;
+    border: solid #fff3dc;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .titulopagina{
+    width:350px;
+  }
+
+  .frasepagina{
+
+    font-size:30px;
+
+  }
+
+  .spoty{
+    width:300px;
+    height:200px;
+  }
+
+
+ 
+  @media screen and (max-width: 1100px) {
+
+    .boton2 {
+      width: 150px;
+      height: 40px;
+      background-color: #fce6be;
+      font-family: Georgia, serif;
+      border: solid #fff3dc;
+      color: rgb(0, 0, 0);
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .boton2:hover {
+      background-color: #000000;
+      border: solid #fff3dc;
+      color: rgb(255, 255, 255);
+      font-family: Georgia, serif;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .imagenuno{
+      width: 450px;
+    }
+
+    .textouno{
+      text-align:justify; font-family: arial; font-size:13px; color: #ffffff; padding: 10% 
+    }
+
+    .textodos{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:40px;color:white;
+    }
+    .textotres{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:20px;color:white;
+    }
+    .noticias2{
+      font-size:10px;
+      
+    }
+
+  .numerolugar{
+    font-size:20px;
+    
+  }
+
+  .textoconci{
+    font-size:15px;
+  }
+}
+
+  
+
+  @media screen and (max-width: 700px) {
+
+    .titulopagina{
+      width:200px;
+    }
+
+    .frasepagina{
+
+      font-size:20px;
+
+    }
+
+    .spoty{
+      width: 100%;
+    }
+
+
+
+    .numerolugar{
+      font-size:15px;
+      
+    }
+
+    .textoconci{
+      font-size:10px;
+    }
+
+    .imagenuno{
+      width: 250px;
+    }
+
+    .textouno{
+      text-align:justify; font-family: arial; font-size:8px; color: #ffffff; padding: 10% 
+    }
+
+    .textodos{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:30px;color:white;
+    }
+    .textotres{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:15px;color:white;
+    }
+    .noticias2{
+      font-size:7px;
+      
+    }
+
+
+
+    
+    #center {
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: fixed;
+      transition: top 0.3s;
+    }
+    .tablita{
+      width:750px;
+    }
+    #navbar1 {
+      display: none;
+  
+    }
+
+    #navbar {
+      display:none;
+    }
+
+    /* Style The Dropdown Button */
+    .caidabtn {
+    
+      background-color: #000000;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      height: 10%;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     }
+
+    .caida{
+      display:block;
+      position: fixed;
+      top:0px;
+      width: 100%;   
+      
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .caida-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .caida-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .caida-content a.activo {
+      color: rgb(83, 90, 187);
+      text-decoration: underline black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    /* Change color of dropdown links on hover */
+    .caida-content a:hover {background-color: #929292}
+    .caida-content a.nada:hover {background-color: #ffffff}
+
+    /* Show the dropdown menu on hover */
+    .caida:hover .caida-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .caida:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .boton2 {
+      width: 100px;
+      height: 30px;
+      background-color: #fce6be;
+      font-family: Georgia, serif;
+      border: solid #fff3dc;
+      color: rgb(0, 0, 0);
+      padding: 4px 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 7px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .boton2:hover {
+      background-color: #000000;
+      border: solid #fff3dc;
+      color: rgb(255, 255, 255);
+      font-family: Georgia, serif;
+      padding: 4px 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 7px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .titulos{
+      font-size:20px;
+    }
+    .imagenuno{
+      width: 200px;
+    }
+
+    .textouno{
+      text-align:justify; font-family: arial; font-size:5px; color: #ffffff; padding: 10% 
+    }
+
+    .textodos{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:15px;color:white;
+    }
+    .textotres{
+      text-align:center; font-family: 'f Finish', sans-serif;font-size:9px;color:white;
+    }
+
+  
+  .numerolugar{
+    font-size:10px;
+    
+  }
+
+  .textoconci{
+    font-size:5px;
+  }
+  .noticias2{
+    font-size:5px;
+    
+  }
+}
+</style>
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable:no">
+    <title>Perfecto Desorden | Fotos</title>
+    <link rel="icon" href="imagenes/logo perfecto.png">
+  </head>
+
+
+  <body>
+    <header>
+      <div class="header">
+        <div style="text-align:center; padding-top:150px; padding-bottom:100px" >
+          <img class="titulopagina" src="imagenes/fotostitulo.png" >
+        </div>
+        <div class="space">
+        </div>
+        
+      <div id="navbar1">
+        <a href="../index.html">INICIO</a>
+        <a  href="Banda PD.html">PERFECTO DESORDEN</a>
+        <a href="../index.html#noticias">NOTICIAS</a>
+        
+        <a class="active" href="Fotos PD.html">FOTOS</a>
+        <a href="Videos PD.html">VIDEOCLIPS</a>
+        <a href="../index.html#concis">CONCIERTOS</a>
+        <a href="../index.html#EP">DISCOGRAFÍA</a>
+        <a href="Contacto PD.html">CONTACTO</a>
+      </div>
+
+      <div class="caida">
+        <button class="caidabtn"><img src="imagenes/nav.png" width=7%></button>
+        <div class="caida-content">
+          <a href="../index.html"><b>INICIO</b></a>
+          <a href="Banda PD.html"><b>PERFECTO DESORDEN</b></a>
+          <a href="../index.html#noticias"><b>NOTICIAS</b></a>
+          <a class="activo" href="Fotos PD.html"><b>FOTOS</b></a>
+
+          <a href="Videos PD.html"><b>VIDEOCLIPS</b></a>
+
+          <a href="../index.html#concis"><b>CONCIERTOS</b></a>
+          <a href="../index.html#EP"><b>DISCOGRAFÍA</b></a>
+          <a href="Contacto PD.html"><b>CONTACTO</b></a>
+        </div>
+      </div>
+    </header>
+
+
+
+    <section class="fondo" >
+
+
+      <table style="margin: 0 auto;">
+        <tr>
+            <th>
+                <!-- Slideshow container -->
+                <div class="slideshow-container" >
+
+                <!-- Full-width images with number and caption text -->
+                    <div class="mySlides9 fade">   
+                        <img src="imagenes/granoll1.png" style="width:100%">   
+                    </div>
+
+                    <div class="mySlides9 fade">
+                        <img src="imagenes/granoll2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides9 fade">
+                        <img src="imagenes/granoll3.png" style="width:100%">
+                    </div>
+                    <div class="mySlides9 fade">
+                      <img src="imagenes/granoll4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides9 fade">
+                      <img src="imagenes/granoll5.png" style="width:100%">
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot9"></span> 
+                        <span class="dot9"></span> 
+                        <span class="dot9"></span>  
+                        <span class="dot9"></span> 
+                        <span class="dot9"></span>  
+                    </div>
+                </div>
+            </th>
+            <th>
+                <td text-align: center;>
+                    <img class="imagenuno" src="imagenes/TITULOS/fm granollers.png" style="float: center;"  >
+                </td>
+            </th>
+        </tr>
+    </table>
+
+
+
+        <table style="margin: 0 auto;">
+            <tr>
+                <th>
+            
+                    <img class="imagenuno" src="imagenes/TITULOS/zafarraya.png" margin="25px" position="relative">
+                </th>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides8 fade">   
+                            <img src="imagenes/raya1.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides8 fade">
+                            <img src="imagenes/raya2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides8 fade">
+                            <img src="imagenes/raya3.png" style="width:100%">
+                        </div>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot8"></span> 
+                            <span class="dot8"></span> 
+                            <span class="dot8"></span> 
+                            
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>  
+
+
+
+        <table style="margin: 0 auto;">
+            <tr>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container" >
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides7 fade">   
+                            <img src="imagenes/stripart1.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides7 fade">
+                            <img src="imagenes/stripart2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides7 fade">
+                            <img src="imagenes/stripart3.png" style="width:100%">
+                        </div>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot7"></span> 
+                            <span class="dot7"></span> 
+                            <span class="dot7"></span>  
+                          </div>
+                    </div>
+                </th>
+                <th>
+                    <td text-align: center;>
+                        <img class="imagenuno" src="imagenes/TITULOS/Stripart.png" style="float: center;"  >
+                    </td>
+                </th>
+            </tr>
+        </table>
+
+        <table style="margin: 0 auto; ">
+            <tr style="vertical-align: middle; ">
+                <th>
+            
+                    <img class="imagenuno" src="imagenes/TITULOS/summer fest.png" position="relative" >
+                </th>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides6 fade">   
+                            <img src="imagenes/piña1.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides6 fade">
+                            <img src="imagenes/piña2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides6 fade">
+                            <img src="imagenes/piña3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides6 fade">
+                            <img src="imagenes/piña 4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides6 fade">
+                            <img src="imagenes/piña5.png" style="width:100%">
+                        </div>
+                        <div class="mySlides6 fade">
+                            <img src="imagenes/piña6.png" style="width:100%">
+                        </div>
+
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot6"></span> 
+                            <span class="dot6"></span> 
+                            <span class="dot6"></span> 
+                            <span class="dot6"></span> 
+                            <span class="dot6"></span>
+                            <span class="dot6"></span>  
+                            
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+
+
+
+
+        <table style="margin: 0 auto;">
+            <tr>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides5 fade">   
+                            <img src="imagenes/sumarro1.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides5 fade">
+                            <img src="imagenes/sumarro2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides5 fade">
+                            <img src="imagenes/sumarro3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides5 fade">   
+                            <img src="imagenes/sumarro4.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides5 fade">   
+                            <img src="imagenes/sumarro5.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides5 fade">   
+                            <img src="imagenes/sumarro6.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides5 fade">   
+                            <img src="imagenes/sumarro 7.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides5 fade">   
+                            <img src="imagenes/sumarro8.png" style="width:100%">   
+                        </div>
+
+
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                            <span class="dot5"></span> 
+                          </div>
+                    </div>
+                </th>
+                <th>
+                    <td text-align: right;>
+                        <img class="imagenuno" src="imagenes/TITULOS/can sumarro.png" style="float: right;" >
+                    </td>
+                </th>
+            </tr>
+        </table>
+
+
+
+        <table style="margin: 0 auto; ">
+            <tr style="vertical-align: middle;">
+                <th>
+            
+                    <img class="imagenuno" src="imagenes/TITULOS/els vespres aelh.png" position="relative">
+                </th>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides4 fade">   
+                            <img src="imagenes/aelh1.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides4 fade">
+                            <img src="imagenes/aelh2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides4 fade">
+                            <img src="imagenes/aelh3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides4 fade">
+                            <img src="imagenes/aelh4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides4 fade">
+                            <img src="imagenes/aelh5.png" style="width:100%">
+                        </div>
+
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot4"></span> 
+                            <span class="dot4"></span> 
+                            <span class="dot4"></span> 
+                            <span class="dot4"></span> 
+                            <span class="dot4"></span> 
+                            
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>  
+
+
+        <table style="margin: 0 auto;">
+            <tr>
+                <th >
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides3 fade">   
+                            <img src="imagenes/santmedir1.png" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides3 fade">
+                            <img src="imagenes/santmedir2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides3 fade">
+                            <img src="imagenes/santmedir3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides3 fade">   
+                            <img src="imagenes/santmedir4.png" style="width:100%">   
+                        </div>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot3"></span> 
+                            <span class="dot3"></span> 
+                            <span class="dot3"></span> 
+                            <span class="dot3"></span> 
+                        </div>
+                    </div>
+                </th>
+                <th>
+                    <td text-align: right;>
+                        <img class="imagenuno" src="imagenes/TITULOS/Sant medir.png" style="float: right;" >
+                    </td>
+                </th>
+            </tr>
+        </table>
+
+
+
+        <table style="margin: 0 auto;">
+            <tr>
+                <th>
+            
+                    <img class="imagenuno" src="imagenes/TITULOS/etseib industrials.png" margin="25px" position="relative">
+                </th>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides2 fade">   
+                            <img src="imagenes/upc1.PNG" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="imagenes/upc2.PNG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <img src="imagenes/upc3.PNG" style="width:100%">
+                        </div>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot2"></span> 
+                            <span class="dot2"></span> 
+                            <span class="dot2"></span> 
+                            
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>  
+
+
+        <table style="margin: 0 auto;">
+            <tr>
+                <th>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">   
+                            <img src="imagenes/bascula1.PNG" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="imagenes/bascula3.PNG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="imagenes/bascula6.PNG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">   
+                            <img src="imagenes/bascula4.PNG" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides fade">   
+                            <img src="imagenes/bascula2.PNG" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides fade">   
+                            <img src="imagenes/bascula7.PNG" style="width:100%">   
+                        </div>
+
+                        <div class="mySlides fade">   
+                            <img src="imagenes/bascula5.PNG" style="width:100%">   
+                        </div>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </th>
+                <th>
+            
+                    <img class="imagenuno" src="imagenes/TITULOS/titulo bascula.png" position="relative">
+                </th>
+            </tr>
+        </table>
+
+
+        <div style="text-align:center;" >
+            <img src="imagenes/separador.png" style="padding: 50px" width=70>
+          </div>
+    
+        
+        
+    </section>
+
+    
+
+    <footer style="background-color:#fff3dc">
+    
+    
+      <div style="text-align:center;">
+        <img src="imagenes/logo perfecto.png" width=15%>
+      </div>
+    
+    
+      <table style="width: 60%; margin: 0 auto;">
+        <tr style="vertical-align: center; height: 50px;">
+          <th>
+            <div style="text-align:center;">
+              <a href=https://open.spotify.com/artist/4yqMB9jPazIBx0oraEmeEb><img src="imagenes/spoty.png" width=15%></a>
+              <a href=https://www.instagram.com/perfectodesorden><img src="imagenes/instaaa.png" width=15%></a>
+              <div style="height: 0px;"></div>
+              <a href=https://www.youtube.com/channel/UCp-eVn46Vgf0LNvRpmFxHPQ><img src="imagenes/yutu.png" width=15%></a>
+              <a href=https://twitter.com/perfectodesordn><img src="imagenes/twitte'.png" width=15%></a>
+            </div>
+          </th>
+          <th>
+            <div style="text-align:center;">
+              <a href="tel:+34615115480"><button class="boton2"><b>TELÉFONO</b></button></a>
+              <div style="height: 0px;"></div>
+              <a href="mailto:perfectodesordenoficial@gmail.com"><button class="boton2"><b>MAIL</b></button></a>
+            </div>
+    
+          </th>
+        </tr>
+      </table>
+      <div class="space"></div>
+      <div style="text-align:center;">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/artist/4yqMB9jPazIBx0oraEmeEb?utm_source=generator&theme=0" width="80%"
+          height="250" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+      <p style="text-align:center; font-size:11px; padding:5px"><b>©perfectodesorden2022</b></p>
+    </footer>
+    
+      
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        let slideIndex = 0;
+        let slideIndex1 = 0;
+        let slideIndex2 = 0;
+        let slideIndex3 = 0;
+        let slideIndex4 = 0;
+        let slideIndex5 = 0;
+        let slideIndex6 = 0;
+        let slideIndex7 = 0;
+        let slideIndex8 = 0;
+
+        showSlides();
+      
+
+            function showSlides() {
+
+            let i=0;
+
+            let slides = document.getElementsByClassName("mySlides");
+            let slides2 = document.getElementsByClassName("mySlides2");
+            let slides3= document.getElementsByClassName("mySlides3");
+            let slides4 = document.getElementsByClassName("mySlides4");
+            let slides5 = document.getElementsByClassName("mySlides5");
+            let slides6 = document.getElementsByClassName("mySlides6");
+            let slides7 = document.getElementsByClassName("mySlides7");
+            let slides8 = document.getElementsByClassName("mySlides8");
+            let slides9 = document.getElementsByClassName("mySlides9");
+
+            let dots = document.getElementsByClassName("dot");
+            let dots2 = document.getElementsByClassName("dot2");
+            let dots3 = document.getElementsByClassName("dot3");
+            let dots4 = document.getElementsByClassName("dot4");
+            let dots5 = document.getElementsByClassName("dot5");
+            let dots6 = document.getElementsByClassName("dot6");
+            let dots7 = document.getElementsByClassName("dot7");
+            let dots8 = document.getElementsByClassName("dot8");
+            let dots9 = document.getElementsByClassName("dot9");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";  
+            }
+            for (i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";  
+            }
+            for (i = 0; i < slides4.length; i++) {
+                slides4[i].style.display = "none";  
+            }
+            for (i = 0; i < slides5.length; i++) {
+                slides5[i].style.display = "none";  
+            }
+            for (i = 0; i < slides6.length; i++) {
+                slides6[i].style.display = "none";  
+            }
+            for (i = 0; i < slides7.length; i++) {
+                slides7[i].style.display = "none";  
+            }
+            for (i = 0; i < slides8.length; i++) {
+                slides8[i].style.display = "none";  
+            }
+            for (i = 0; i < slides9.length; i++) {
+              slides9[i].style.display = "none";  
+          }
+
+            slideIndex++;
+            slideIndex1++;
+            slideIndex2++;
+            slideIndex3++;
+            slideIndex4++;
+            slideIndex5++;
+            slideIndex6++;
+            slideIndex7++;
+            slideIndex8++;
+
+            if (slideIndex > slides.length) {slideIndex = 1} 
+            if (slideIndex1 > slides2.length) {slideIndex1 = 1}   
+            if (slideIndex2 > slides3.length) {slideIndex2 = 1}   
+            if (slideIndex3 > slides4.length) {slideIndex3 = 1}   
+            if (slideIndex4 > slides5.length) {slideIndex4 = 1}   
+            if (slideIndex5 > slides6.length) {slideIndex5 = 1}   
+            if (slideIndex6 > slides7.length) {slideIndex6 = 1}   
+            if (slideIndex7 > slides8.length) {slideIndex7 = 1}
+            if (slideIndex8 > slides9.length) {slideIndex8 = 1}
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots2.length; i++) {
+                dots2[i].className = dots2[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots3.length; i++) {
+                dots3[i].className = dots3[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots4.length; i++) {
+                dots4[i].className = dots4[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots5.length; i++) {
+                dots5[i].className = dots5[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots6.length; i++) {
+                dots6[i].className = dots6[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots7.length; i++) {
+                dots7[i].className = dots7[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots8.length; i++) {
+                dots8[i].className = dots8[i].className.replace("activa", "");
+            }
+            for (i = 0; i < dots9.length; i++) {
+              dots9[i].className = dots9[i].className.replace("activa", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " activa";
+
+            slides2[slideIndex1-1].style.display = "block";  
+            dots2[slideIndex1-1].className += " activa";
+
+            slides3[slideIndex2-1].style.display = "block";  
+            dots3[slideIndex2-1].className += " activa";
+
+            slides4[slideIndex3-1].style.display = "block";  
+            dots4[slideIndex3-1].className += " activa";
+
+            slides5[slideIndex4-1].style.display = "block";  
+            dots5[slideIndex4-1].className += " activa";
+
+            slides6[slideIndex5-1].style.display = "block";  
+            dots6[slideIndex5-1].className += " activa";
+
+            slides7[slideIndex6-1].style.display = "block";  
+            dots7[slideIndex6-1].className += " activa";
+
+            slides8[slideIndex7-1].style.display = "block";  
+            dots8[slideIndex7-1].className += " activa";
+
+            slides9[slideIndex8-1].style.display = "block";  
+            dots9[slideIndex8-1].className += " activa";
+
+            setTimeout(showSlides, 2500); // Change image every 2 seconds
+            }
+
+           
+    </script>
+  </body>
+
+
+</html>

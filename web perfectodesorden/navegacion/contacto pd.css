@@ -1,0 +1,196 @@
+/* Style the header with a grey background and some padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(39, 39, 39); 
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+
+
+.boton {
+  background-color: #435268;
+  
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.boton:hover {
+  
+  background-color: #6fa1da;
+ 
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+
+
+.imagen {  
+  z-index: -4;
+  opacity: 0.5;
+}
+.imagen:hover {
+  opacity: 100%;
+}
+
+.static {
+  z-index: 1;
+  position:absolute;
+  opacity:0;
+}
+
+.static:hover {
+  opacity:40;
+}
+
+.space {
+  height: 40px;
+}
+
+.small_space {
+  height: 15px;
+}
+
+.header {
+  overflow: hidden;
+  background-color:#585858;
+  box-shadow: 0px 4px 16px 4px rgba(0,0,0,0.2);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.fondo {
+  overflow: hidden;
+  background-image: url("imagenes/fondo bio.png");
+  background-position: center;
+}
+
+.georgia {
+  text-align:justify; 
+  padding-left: 30%;
+  padding-right: 30%;
+  font-family: Georgia, serif;
+  color:#000000;
+  font-size: 25px;
+}
+
+.georgia2 {
+  text-align:center; 
+
+  font-family: Georgia, serif;
+  color:#000000;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 1400px) {
+  .georgia {
+    text-align:justify; 
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: Georgia, serif;
+    color:#000000;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .georgia {
+    text-align:justify; 
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: Georgia, serif;
+    color:#000000;
+    font-size: 15px;
+  }
+
+  .georgia2 {
+    text-align:center; 
+  
+    font-family: Georgia, serif;
+    color:#000000;
+    font-size: 50px;
+  }
+
+}
+
+
+.grupo{
+
+  box-shadow: 0px 4px 16px 4px rgba(0,0,0,0.2);
+}
+
+.insta{
+  font-size: 20px;
+  text-align:center;
+  font-family: Georgia, serif; 
+  color:#000000;
+}
+
+.insta:hover{
+  
+  color:#fc466b
+}
+
+.section {
+  overflow: hidden;
+  background-image: url("imagenes/papelarrugadonegro.png");
+  background-repeat: no-repeat;
+  height: 275px;
+  background-position: center;
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+
+
